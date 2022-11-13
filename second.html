@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a function using switch case to find the grade of a student based
+        on marks obtained</h1>
+    <h2>plz check the console in browser for output</h2>
+    <script>
+var marks=prompt();
+function grade(marks)
+{
+       
+ switch (true)
+ {
+    case (marks <= 100 && marks >= 90):
+        console.log("S grade");
+        break;
+    case (marks <= 89 && marks >= 80):
+        console.log("A grade");
+        break;
+    case (marks <= 79 && marks >= 70):
+        console.log("B grade");
+        break;
+   case (marks <= 69 && marks >= 60):
+        console.log("C grade");
+        break;
+    case (marks <= 59 && marks >= 50):
+        console.log("D grade");
+        break;
+    case (marks <=49 && marks >=40):
+        console.log("E grade");
+        break;
+    case (marks<=39 && marks >=0):
+        console.log("Student has failed");
+        break;
+
+    case (marks > 100 && marks < 0):
+        console.log("Invalid Marks");
+        break; 
+
+ 
+    default:
+        console.log("Invalid Marks");
+   }
+}
+   
+   grade(marks);
+
+    </script>
+</body>
+</html>

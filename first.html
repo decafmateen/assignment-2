@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Write a function to check the Triangle
+    </h1>
+    <h3>
+        plz check the console for output
+    </h3>
+    <script>
+    function checktriangle(x,y,z)
+{
+    if(x==y && y==z)
+    console.log("Equilateral Triangle");
+    else if(x==y || y==z || z==x)
+    console.log("Isosceles Triangle");
+    else
+    console.log("Scalene Triangle");
+}
+
+var x=prompt();
+var y=prompt();
+var z=prompt();
+
+checktriangle(x,y,z);
+</script>
+
+    
+</body>
+</html>
+
+
